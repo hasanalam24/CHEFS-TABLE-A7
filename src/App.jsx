@@ -1,5 +1,7 @@
 
 import './App.css'
+import Banner from './Components/Banner/Banner'
+import Cards from './Components/Cards/Cards'
 import Header from './Components/Header/Header'
 
 function App() {
@@ -9,6 +11,9 @@ function App() {
     <div className='container mx-auto'>
 
       <Header></Header>
+      <Banner></Banner>
+
+      <Cards></Cards>
 
     </div>
   )
