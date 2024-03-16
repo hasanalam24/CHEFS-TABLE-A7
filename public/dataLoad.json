@@ -11,7 +11,7 @@
         ],
         "preparing_time": "30 min",
         "calories": "320 calories",
-        "recipe_image": "https://i.ibb.co/4Vqdk0Y/pasta.png"
+        "recipe_image": "https://i.ibb.co/MBKvWRm/chicken-stir-fry-vegetables.jpg"
     },
     {
         "recipe_id": 2,
@@ -26,7 +26,7 @@
         ],
         "preparing_time": "25 min",
         "calories": "280 calories",
-        "recipe_image": "https://i.ibb.co/qr8Bff4/Chicken-Salad.png"
+        "recipe_image": "https://i.ibb.co/4Vqdk0Y/pasta.png"
     },
     {
         "recipe_id": 3,
@@ -41,7 +41,7 @@
         ],
         "preparing_time": "20 min",
         "calories": "350 calories",
-        "recipe_image": "https://i.ibb.co/4Vqdk0Y/pasta.png"
+        "recipe_image": "https://i.ibb.co/cNqcJfC/vegetable-salad.jpg"
     },
     {
         "recipe_id": 4,
@@ -70,7 +70,7 @@
         ],
         "preparing_time": "35 min",
         "calories": "380 calories",
-        "recipe_image": "https://i.ibb.co/4Vqdk0Y/pasta.png"
+        "recipe_image": "https://i.ibb.co/0CMF7cK/mashroom.jpg"
     },
     {
         "recipe_id": 6,
@@ -85,6 +85,6 @@
         ],
         "preparing_time": "20 min",
         "calories": "250 calories",
-        "recipe_image": "https://i.ibb.co/qr8Bff4/Chicken-Salad.png"
+        "recipe_image": "https://i.ibb.co/nbttRDD/tabbouleh-salad.jpg"
     }
 ]
