@@ -11,23 +11,22 @@ import WantCook from './Components/WantCook/WantCook'
 function App() {
 
   const [cooks, setCooks] = useState([])
-  const [cart, setCart] = useState([])
+
 
   const handleClick = (c) => {
-    // console.log(c)
-    // const itemAvailable = cart.find(item => item.recipe_id == c.id)
-    // if (!itemAvailable) {
-    //   const newCart = [...cart, c]
-    //   setCooks(newCart)
-    // }
-    // else {
-    //   alert('availabe now')
-    // }
     const newCart = [...cooks, c]
     setCooks(newCart)
-    // setCart([c])
+
+
   }
-  // console.log(cart)
+
+  const removeItem = (id) => {
+    // console.log('paiso', id)
+    const preparingCooking = cooks.filter(singleItem => singleItem.recipe_id !== id)
+    setCooks(preparingCooking)
+
+  }
+
   return (
     <div className='container mx-auto'>
 
@@ -41,8 +40,9 @@ function App() {
 
 
       <div className='flex'>
+
         <Cards handleClick={handleClick}></Cards>
-        <WantCook cooks={cooks}></WantCook>
+        <WantCook cooks={cooks} removeItem={removeItem}></WantCook>
       </div>
 
     </div>

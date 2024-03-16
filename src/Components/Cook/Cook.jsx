@@ -1,8 +1,9 @@
 import { useState } from "react";
 
 
-const Cook = ({ cookProp }) => {
+const Cook = ({ cookProp, removeItem }) => {
     const { recipe_id, recipe_name, preparing_time, calories } = cookProp
+    // console.log(cookProp)
 
     // const [count, setCount] = useState(0)
     // const countList = () => {
@@ -23,6 +24,7 @@ const Cook = ({ cookProp }) => {
                             <td>{recipe_name}</td>
                             <td>{preparing_time}</td>
                             <td>{calories}</td>
+                            <button onClick={() => removeItem(recipe_id)} className="btn bg-green-500 p-4">Preparing</button>
                         </tr>
 
                     </tbody>
