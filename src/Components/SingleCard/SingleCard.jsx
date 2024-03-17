@@ -4,8 +4,8 @@ const SingleCard = ({ cardProps, handleClick, selectedCount }) => {
     // console.log(cardProps)
     const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories } = cardProps;
     return (
-        <div className="flex w-3/4">
-            <div className="lg:grid lg:grid-cols-3">
+        <div className="">
+            <div className="">
                 <div className="card w-96  shadow-xl mt-5">
                     <figure><img className="w-[331px] h-[200px] rounded-xl" src={recipe_image} alt="" /></figure>
                     <div className="card-body">

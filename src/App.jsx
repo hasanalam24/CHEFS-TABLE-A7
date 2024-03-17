@@ -53,7 +53,7 @@ function App() {
       </div>
 
       <Toaster position="top-right"></Toaster>
-      <div className='flex'>
+      <div className='inline lg:flex'>
 
         <Cards handleClick={handleClick} selectedCount={selectedCount}></Cards>
         <WantCook cooks={cooks} removeItem={removeItem}></WantCook>

@@ -17,7 +17,7 @@ const WantCook = ({ cooks, removeItem }) => {
     }
 
     return (
-        <div className="mt-8 text-center w-[450px]">
+        <div className="mt-8 text-center w-[384px] mx-auto lg:w-[450px]">
             <div>
                 <h1 className="text-2xl">Want to cook: {cooks.length}</h1>
                 <div className="divider"></div>
