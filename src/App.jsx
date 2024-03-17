@@ -5,7 +5,7 @@ import Banner from './Components/Banner/Banner'
 import Cards from './Components/Cards/Cards'
 import Header from './Components/Header/Header'
 import WantCook from './Components/WantCook/WantCook'
-
+import toast, { Toaster } from 'react-hot-toast'
 
 
 function App() {
@@ -14,9 +14,17 @@ function App() {
 
 
   const handleClick = (c) => {
-    const newCart = [...cooks, c]
-    setCooks(newCart)
 
+    const xRepeat = cooks.find(item => item.recipe_id == c.recipe_id)
+
+    if (!xRepeat) {
+      const newCart = [...cooks, c]
+      setCooks(newCart)
+
+    }
+    else {
+      toast.error("Oh! No! This item already added")
+    }
 
   }
 
@@ -38,7 +46,7 @@ function App() {
         <p className="w-3/4 mx-auto text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur ea debitis facere voluptatibus officia labore, aspernatur laborum, recusandae nisi illo dolor? Dolor porro voluptate quod recusandae non! Voluptates, aut magnam.</p>
       </div>
 
-
+      <Toaster position="top-right"></Toaster>
       <div className='flex'>
 
         <Cards handleClick={handleClick}></Cards>
