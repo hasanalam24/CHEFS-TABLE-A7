@@ -1,8 +1,7 @@
 
 
 const CurrentCooking = ({ cookProp }) => {
-    console.log(cookProp)
-    const { recipe_id, recipe_name, preparing_time, calories } = cookProp
+    // console.log(cookProp)
     return (
         <div>
             <div className="overflow-x-auto">
@@ -12,10 +11,10 @@ const CurrentCooking = ({ cookProp }) => {
                     <tbody>
                         {/* row 1 */}
                         <tr className="bg-base-200">
-                            <th>{recipe_id}</th>
-                            <td>{recipe_name}</td>
-                            <td>{preparing_time}</td>
-                            <td>{calories}</td>
+                            <th></th>
+                            <td>{cookProp.recipe_name}</td>
+                            <td></td>
+                            <td></td>
 
                         </tr>
 

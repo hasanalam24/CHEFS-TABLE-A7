@@ -4,7 +4,7 @@ const SingleCard = ({ cardProps, handleClick, selectedCount }) => {
     // console.log(cardProps)
     const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories } = cardProps;
 
-    ingredients.map(singleInt => console.log(singleInt))
+
 
     return (
         <div className="">
@@ -17,13 +17,12 @@ const SingleCard = ({ cardProps, handleClick, selectedCount }) => {
                         <div className="divider"></div>
 
                         <h3 className="text-xl">Ingredients: {ingredients.length}</h3>
-                        <ul className="list-disc">
-                            <li>{ingredients[0]}</li>
-                            <li>{ingredients[1]}</li>
-                            <li>{ingredients[2]}</li>
-                            <li>{ingredients[3]}</li>
-                            <li>{ingredients[4]}</li>
-                            <li>{ingredients[5]}</li>
+                        <ul>
+
+
+                            {
+                                ingredients.map((ingredient, index) => <li key={index} className="list-disc">{ingredient}</li>)
+                            }
 
                         </ul>
 
