@@ -3,7 +3,7 @@ import SingleCard from "../SingleCard/SingleCard";
 
 
 
-const Cards = ({ handleClick }) => {
+const Cards = ({ handleClick, selectedCount }) => {
 
     const [cards, setCards] = useState([])
 
@@ -25,6 +25,7 @@ const Cards = ({ handleClick }) => {
                     {
                         cards.map(card => <SingleCard key={card.id} cardProps={card}
                             handleClick={handleClick}
+                            selectedCount={selectedCount}
                         ></SingleCard>)
                     }
                 </div>

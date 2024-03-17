@@ -11,12 +11,13 @@ import toast, { Toaster } from 'react-hot-toast'
 function App() {
 
   const [cooks, setCooks] = useState([])
-  const [count, setCount] = useState(0)
 
-  // const countSet = () => {
-  //   setCount(count + 1)
+  const [counts, setCounts] = useState(0)
+  const selectedCount = () => {
+    setCounts(counts + 1)
+  }
+  console.log(counts)
 
-  // }
 
   const handleClick = (c) => {
 
@@ -34,7 +35,7 @@ function App() {
   }
 
   const removeItem = (id) => {
-    console.log('paiso', id)
+    // console.log('paiso', id)
     const preparingCooking = cooks.filter(singleItem => singleItem.recipe_id !== id)
     setCooks(preparingCooking)
 
@@ -54,7 +55,7 @@ function App() {
       <Toaster position="top-right"></Toaster>
       <div className='flex'>
 
-        <Cards handleClick={handleClick}></Cards>
+        <Cards handleClick={handleClick} selectedCount={selectedCount}></Cards>
         <WantCook cooks={cooks} removeItem={removeItem}></WantCook>
       </div>
 

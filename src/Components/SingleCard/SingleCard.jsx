@@ -1,6 +1,6 @@
 
 
-const SingleCard = ({ cardProps, handleClick }) => {
+const SingleCard = ({ cardProps, handleClick, selectedCount }) => {
     // console.log(cardProps)
     const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories } = cardProps;
     return (
@@ -30,7 +30,7 @@ const SingleCard = ({ cardProps, handleClick }) => {
                             <p>{calories}</p>
                         </div>
                         <div className="card-actions">
-                            <button onClick={() => handleClick(cardProps)} className="btn btn-primary">Want to Cook</button>
+                            <button onClick={() => (handleClick(cardProps), selectedCount)} className="btn btn-primary">Want to Cook</button>
                         </div>
                     </div>
                 </div>

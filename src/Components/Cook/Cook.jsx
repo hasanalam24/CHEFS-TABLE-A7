@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-const Cook = ({ cookProp, removeItem, count }) => {
+const Cook = ({ cookProp, removeItem, count, showCooking }) => {
     const { recipe_id, recipe_name, preparing_time, calories } = cookProp
 
     return (
@@ -17,7 +17,7 @@ const Cook = ({ cookProp, removeItem, count }) => {
                             <td>{recipe_name}</td>
                             <td>{preparing_time}</td>
                             <td>{calories}</td>
-                            <button onClick={() => (removeItem(recipe_id), count())} className="btn bg-green-500 p-4">Preparing</button>
+                            <button onClick={() => (removeItem(recipe_id), count(), showCooking(cookProp))} className="btn bg-green-500 p-4">Preparing</button>
                         </tr>
 
                     </tbody>
