@@ -21,7 +21,7 @@ const Cards = ({ handleClick }) => {
 
 
             <div className="mt-8 flex">
-                <div className="grid grid-cols-2 w-[800px] ml-10  space-y-3 ">
+                <div className="grid grid-cols-2 w-[790px] ml-10  space-y-3 ">
                     {
                         cards.map(card => <SingleCard key={card.id} cardProps={card}
                             handleClick={handleClick}
