@@ -8,6 +8,7 @@ import WantCook from './Components/WantCook/WantCook'
 import toast, { Toaster } from 'react-hot-toast'
 
 
+
 function App() {
 
   const [cooks, setCooks] = useState([])
@@ -57,6 +58,7 @@ function App() {
 
         <Cards handleClick={handleClick} selectedCount={selectedCount}></Cards>
         <WantCook cooks={cooks} removeItem={removeItem}></WantCook>
+
       </div>
 
     </div>

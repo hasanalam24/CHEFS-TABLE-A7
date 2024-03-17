@@ -3,6 +3,9 @@
 const SingleCard = ({ cardProps, handleClick, selectedCount }) => {
     // console.log(cardProps)
     const { recipe_image, recipe_name, short_description, ingredients, preparing_time, calories } = cardProps;
+
+    ingredients.map(singleInt => console.log(singleInt))
+
     return (
         <div className="">
             <div className="">

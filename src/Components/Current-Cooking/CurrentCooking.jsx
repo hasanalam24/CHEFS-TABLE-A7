@@ -1,9 +1,8 @@
-import { useState } from "react";
 
 
-const Cook = ({ cookProp, removeItem, count, showCooking, index }) => {
+const CurrentCooking = ({ cookProp }) => {
+    console.log(cookProp)
     const { recipe_id, recipe_name, preparing_time, calories } = cookProp
-
     return (
         <div>
             <div className="overflow-x-auto">
@@ -13,11 +12,11 @@ const Cook = ({ cookProp, removeItem, count, showCooking, index }) => {
                     <tbody>
                         {/* row 1 */}
                         <tr className="bg-base-200">
-                            <th>{(index + 1)}</th>
+                            <th>{recipe_id}</th>
                             <td>{recipe_name}</td>
                             <td>{preparing_time}</td>
                             <td>{calories}</td>
-                            <button onClick={() => (removeItem(recipe_id), count(), showCooking(cookProp))} className="btn bg-green-500 p-4">Preparing</button>
+
                         </tr>
 
                     </tbody>
@@ -27,4 +26,5 @@ const Cook = ({ cookProp, removeItem, count, showCooking, index }) => {
     );
 };
 
-export default Cook;
+export default CurrentCooking;
+
