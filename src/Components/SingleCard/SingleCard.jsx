@@ -1,4 +1,5 @@
-
+import { FaRegClock } from "react-icons/fa6";
+import { FaFire } from "react-icons/fa";
 
 const SingleCard = ({ cardProps, handleClick, selectedCount }) => {
     // console.log(cardProps)
@@ -28,8 +29,8 @@ const SingleCard = ({ cardProps, handleClick, selectedCount }) => {
 
 
                         <div className="flex">
-                            <p>{preparing_time}</p>
-                            <p>{calories}</p>
+                            <p className="flex gap-3 items-center"><FaRegClock></FaRegClock>{preparing_time}</p>
+                            <p className="flex gap-3 items-center"><FaFire></FaFire>{calories}</p>
                         </div>
                         <div className="card-actions">
                             <button onClick={() => (handleClick(cardProps), selectedCount)} className="btn btn-primary">Want to Cook</button>
