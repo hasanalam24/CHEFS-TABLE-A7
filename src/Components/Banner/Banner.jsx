@@ -1,8 +1,8 @@
-import banner from '../../../album/banner.png'
+
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen rounded-3xl mx-auto" style={{ backgroundImage: 'url(../../../album/banner.png)' }}>
+        <div className="hero min-h-screen rounded-3xl mx-auto" style={{ backgroundImage: 'url(/banner.png)' }}>
 
             <div className="hero-content text-center text-neutral-content">
                 <div className=" w-full lg:w-3/4">

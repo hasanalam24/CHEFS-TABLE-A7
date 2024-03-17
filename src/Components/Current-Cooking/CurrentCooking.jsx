@@ -1,9 +1,10 @@
 
 
-const CurrentCooking = ({ cookProp }) => {
+const CurrentCooking = () => {
     // console.log(cookProp)
     return (
         <div>
+
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}
@@ -12,7 +13,7 @@ const CurrentCooking = ({ cookProp }) => {
                         {/* row 1 */}
                         <tr className="bg-base-200">
                             <th></th>
-                            <td>{cookProp.recipe_name}</td>
+                            <td></td>
                             <td></td>
                             <td></td>
 
@@ -26,4 +27,3 @@ const CurrentCooking = ({ cookProp }) => {
 };
 
 export default CurrentCooking;
-

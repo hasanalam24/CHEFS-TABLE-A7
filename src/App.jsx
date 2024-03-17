@@ -6,6 +6,7 @@ import Cards from './Components/Cards/Cards'
 import Header from './Components/Header/Header'
 import WantCook from './Components/WantCook/WantCook'
 import toast, { Toaster } from 'react-hot-toast'
+import CurrentCooking from './Components/Current-Cooking/CurrentCooking'
 
 
 
@@ -57,7 +58,10 @@ function App() {
       <div className='inline lg:flex'>
 
         <Cards handleClick={handleClick} selectedCount={selectedCount}></Cards>
-        <WantCook cooks={cooks} removeItem={removeItem}></WantCook>
+        <div>
+          <WantCook cooks={cooks} removeItem={removeItem}></WantCook>
+          <CurrentCooking></CurrentCooking>
+        </div>
 
       </div>
 
